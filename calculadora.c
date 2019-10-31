@@ -1,84 +1,88 @@
-#include <stdio.h>
+#include <stdio.h> 
 #include <stdlib.h>
 
-void soma(){
-
+void soma()
+{ 
+    //todo
+    system ("pause"); 
+    system("cls"); 
+    menu(); 
 }
 
-void subtrai(){
-
+void subtrai()
+{
+    //todo
+    system ("pause");
+    system("cls"); 
+    menu();
 }
 
-void divide(){
-
+void divide()
+{ 
+    //todo
+    system ("pause");
+    system("cls");
+    menu();
 }
 
-void multiplica(){
-    float prim, seg, result=0;
-    printf("///////DIVISAO///////")
-
-    printf("Indique o 1 numero:\n");
-    scanf("%f", &prim);
-
-    printf("Indique o 2 numero:\n");
-    scanf("%f", &seg);
-
-    // subtrai dos valores
-    result= prim*seg;
-
-    printf("O resultado e: %.2f\n", result);
+void multiplica()
+{ 
+    //todo
+    system ("pause");
+    system("cls");
+    menu();
 }
 
-int menu() {
+void menu()
+{ 
+    int escolha;
+
     printf("\t\tBem vindo a calculadora em C\n\n");
-    for (;;) {
-        int escolha = 0;
 
+    printf("Selecione uma operacao matematica:\n");
+    printf("\t1- Adicao\n");
+    printf("\t2- Subtracao\n");
+    printf("\t3- Divisao\n");
+    printf("\t4- Multiplicacao\n");
+    printf("\t5- Sair\n");
+    printf("Operacao: ");
+    scanf ("%d", &escolha);
 
+    switch (escolha)
+    {
+        case 1: 
+            soma(); 
+        break; 
 
-        printf("Selecione uma operacao matematica:\n");
-        printf("\t1- Adicao\n");
-        printf("\t2- Subtracao\n");
-        printf("\t3- Divisao\n");
-        printf("\t4- Multiplicacao\n");
-        printf("\t5- Sair\n");
-        printf("Operacao: ");
-        scanf("%d", &escolha);
+        case 2:
+            subtrai();
+        break;
 
-        switch (escolha) {
-            case 1:
-                soma();
-                break;
+        case 3:
+            divide();
+        break;
 
-            case 2:
-                subtrai();
-                break;
+        case 4:
+            multiplica();
+            break;
 
-            case 3:
-                divide();
-                break;
+        case 5:
+            system("exit");
+            printf("\nFim...\n\n");
+        break;
 
-            case 4:
-                multiplica();
-                break;
-
-            case 5:
-                system("exit");
-                printf("\nFim...\n\n");
-                break;
-
-            default:
-                printf("\nComando invalido, tente novamente!\n\n");
-                system("pause");
-                system("cls");
-                menu();
-                break;
-        }
+        default: 
+            printf("\nComando invalido, tente novamente!\n\n");
+            system ("pause");
+            system ("cls");
+            menu(); 
+            break;
     }
 }
 
-int main(){
 
+int main() 
+{
     menu();
     system("pause");
     return 0;
