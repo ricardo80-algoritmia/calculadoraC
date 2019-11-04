@@ -11,19 +11,34 @@ void soma()
 
 void subtrai()
 {
-    //todo
-    system ("pause");
+	//todo
+    system ("pause"); 
     system("cls"); 
-    menu();
+    menu(); 
 }
 
 void divide()
-{ 
-    //todo
-    system ("pause");
-    system("cls");
-    menu();
+{
+
+    float prim, seg, result=0;
+
+    printf("///////DIVISAO///////");
+
+    printf("Indique o 1 numero:\n");
+
+    scanf("%f", &prim);
+
+    printf("Indique o 2 numero:\n");
+
+    scanf("%f", &seg);
+
+    // Divide os valores
+
+    result= prim/seg;
+    printf("O resultado e: %.2f\n", result);
+
 }
+
 
 void multiplica()
 { 
