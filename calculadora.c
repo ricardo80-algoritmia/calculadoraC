@@ -1,8 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void soma()
-{
+void soma(){
+    float prim, seg, result=0;
+    printf("++++++++SOMA+++++++++")
+    printf("Indique o 1 numero:\n");
+    scanf("%f", &prim);
+
+void soma(){
     //todo
     system ("pause");
     system("cls");
@@ -10,8 +15,19 @@ void soma()
 }
 
 
-void subtrai()
-{
+    printf("Indique o 2 numero:\n");
+    scanf("%f", &seg);
+
+    // soma dos valores
+    result= prim+seg;
+
+    printf("O resultado e: %.2f\n", result);
+}
+
+    void subtrai(){
+
+void subtrai(){
+
 
     float prim, seg, result=0;
 
@@ -31,8 +47,7 @@ void subtrai()
 }
 
 
-void divide()
-{
+void divide(){
 
     float prim, seg, result=0;
 
@@ -54,16 +69,33 @@ void divide()
 }
 
 
-void multiplica()
-{
+void multiplica(){
+    float prim, seg, result=0;
+    printf("///////DIVISAO///////")
+
+    printf("Indique o 1 numero:\n");
+    scanf("%f", &prim);
+
+    printf("Indique o 2 numero:\n");
+    scanf("%f", &seg);
+
+    // subtrai dos valores
+    result= prim*seg;
+
+    printf("O resultado e: %.2f\n", result);
+}
+
+void menu(){
+
+void multiplica(){
     //todo
     system ("pause");
     system("cls");
     menu();
 }
 
-void menu()
-{
+void menu(){
+  
     int escolha;
 
     printf("\t\tBem vindo a calculadora em C\n\n");
@@ -77,11 +109,17 @@ void menu()
     printf("Operacao: ");
     scanf ("%d", &escolha);
 
-    switch (escolha)
-    {
+
+    switch (escolha){
+        case 1: 
+            soma(); 
+        break; 
+
+    switch (escolha){
         case 1:
             soma();
             break;
+
 
         case 2:
             subtrai();
@@ -110,8 +148,11 @@ void menu()
 }
 
 
-int main()
-{
+
+int main(){
+
+int main(){
+
     menu();
     system("pause");
     return 0;
