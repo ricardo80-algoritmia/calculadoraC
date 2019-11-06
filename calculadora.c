@@ -7,13 +7,6 @@ void soma(){
     printf("Indique o 1 numero:\n");
     scanf("%f", &prim);
 
-void soma(){
-    //todo
-    system ("pause");
-    system("cls");
-    menu();
-}
-
 
     printf("Indique o 2 numero:\n");
     scanf("%f", &seg);
@@ -25,8 +18,6 @@ void soma(){
 }
 
     void subtrai(){
-
-void subtrai(){
 
 
     float prim, seg, result=0;
@@ -85,14 +76,6 @@ void multiplica(){
     printf("O resultado e: %.2f\n", result);
 }
 
-void menu(){
-
-void multiplica(){
-    //todo
-    system ("pause");
-    system("cls");
-    menu();
-}
 
 void menu(){
   
@@ -113,13 +96,7 @@ void menu(){
     switch (escolha){
         case 1: 
             soma(); 
-        break; 
-
-    switch (escolha){
-        case 1:
-            soma();
-            break;
-
+        break;
 
         case 2:
             subtrai();
@@ -149,7 +126,7 @@ void menu(){
 
 
 
-int main(){
+
 
 int main(){
 
