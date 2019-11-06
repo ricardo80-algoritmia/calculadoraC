@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include <stdio.h>
 #include <stdlib.h>
 
 void soma(){
@@ -6,6 +6,14 @@ void soma(){
     printf("++++++++SOMA+++++++++")
     printf("Indique o 1 numero:\n");
     scanf("%f", &prim);
+
+void soma(){
+    //todo
+    system ("pause");
+    system("cls");
+    menu();
+}
+
 
     printf("Indique o 2 numero:\n");
     scanf("%f", &seg);
@@ -17,6 +25,9 @@ void soma(){
 }
 
     void subtrai(){
+
+void subtrai(){
+
 
     float prim, seg, result=0;
 
@@ -31,8 +42,8 @@ void soma(){
 
     result= prim-seg;
     printf("O resultado e: %.2f\n", result);
-      
-	
+
+
 }
 
 
@@ -75,6 +86,16 @@ void multiplica(){
 }
 
 void menu(){
+
+void multiplica(){
+    //todo
+    system ("pause");
+    system("cls");
+    menu();
+}
+
+void menu(){
+  
     int escolha;
 
     printf("\t\tBem vindo a calculadora em C\n\n");
@@ -88,18 +109,25 @@ void menu(){
     printf("Operacao: ");
     scanf ("%d", &escolha);
 
+
     switch (escolha){
         case 1: 
             soma(); 
         break; 
 
+    switch (escolha){
+        case 1:
+            soma();
+            break;
+
+
         case 2:
             subtrai();
-        break;
+            break;
 
         case 3:
             divide();
-        break;
+            break;
 
         case 4:
             multiplica();
@@ -108,19 +136,23 @@ void menu(){
         case 5:
             system("exit");
             printf("\nFim...\n\n");
-        break;
+            break;
 
-        default: 
+        default:
             printf("\nComando invalido, tente novamente!\n\n");
             system ("pause");
             system ("cls");
-            menu(); 
+            menu();
             break;
     }
 }
 
 
+
 int main(){
+
+int main(){
+
     menu();
     system("pause");
     return 0;
