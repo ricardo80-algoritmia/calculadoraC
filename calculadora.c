@@ -3,7 +3,7 @@
 
 void soma(){
     float prim, seg, result=0;
-    printf("++++++++SOMA+++++++++")
+    printf("++++++++SOMA+++++++++");
     printf("Indique o 1 numero:\n");
     scanf("%f", &prim);
 
@@ -17,7 +17,7 @@ void soma(){
     printf("O resultado e: %.2f\n", result);
 }
 
-    void subtrai(){
+void subtrai(){
 
 
     float prim, seg, result=0;
@@ -62,7 +62,7 @@ void divide(){
 
 void multiplica(){
     float prim, seg, result=0;
-    printf("///////DIVISAO///////")
+    printf("///////DIVISAO///////");
 
     printf("Indique o 1 numero:\n");
     scanf("%f", &prim);
@@ -78,7 +78,7 @@ void multiplica(){
 
 
 void menu(){
-  
+
     int escolha;
 
     printf("\t\tBem vindo a calculadora em C\n\n");
@@ -94,9 +94,9 @@ void menu(){
 
 
     switch (escolha){
-        case 1: 
-            soma(); 
-        break;
+        case 1:
+            soma();
+            break;
 
         case 2:
             subtrai();
